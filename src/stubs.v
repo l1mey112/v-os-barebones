@@ -1,8 +1,5 @@
 module main
 
-// Code is governed by the GPL-2.0 license.
-// Copyright (C) 2021-2022 The Vinix authors.
-
 [noreturn]
 pub fn halt() {
     asm volatile amd64 {
