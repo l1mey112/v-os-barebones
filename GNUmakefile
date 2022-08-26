@@ -110,4 +110,4 @@ clean:
 
 .PHONY: qemu
 qemu: all
-	qemu-system-x86_64 -display spice-app $(ISO)
+	qemu-system-x86_64 $(ISO)
