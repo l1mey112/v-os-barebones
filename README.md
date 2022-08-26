@@ -1,13 +1,12 @@
 # v-os-barebones
 Simple code to get V to run under a freestanding operating system kernel. Code snippets taken from vinix.
 
-Uses the limine bootloader, follow their steps to allow limine to compile alongside the kernel.
-
 ```sh
 # install V from source, and run ./v symlink.
 # install xorriso, check the makefile.
 
 cd limine/ && make # create the limine-deploy executable
+# Follow their steps if needed to allow limine to compile alongside the kernel.
 
 make # make V kernel
 
