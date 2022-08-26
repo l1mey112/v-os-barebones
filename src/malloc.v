@@ -16,8 +16,7 @@ pub fn init_memory() {
 	unsafe {
 		for i := 0; i < resp.entry_count; i++ {
 			if  resp.entries[i].@type != u32(limine_memmap_usable)
-				&&  resp.entries[i].@type != u32(limine_memmap_bootloader_reclaimable
-			) {
+				&&  resp.entries[i].@type != u32(limine_memmap_bootloader_reclaimable) {
 				continue
 			}
 			if resp.entries[i].length > largest_block.length {
@@ -60,7 +59,7 @@ pub fn calloc_(a u64, b u64) voidptr {
 
 [export: 'realloc']
 pub fn realloc_(a u64, b u64) voidptr {
-	kpanic(c"stub - getchar called")
+	kpanic(c"stub - realloc called")
 	return voidptr(0)
 }
 
