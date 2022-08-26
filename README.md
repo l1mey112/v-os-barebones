@@ -1,5 +1,5 @@
 # v-os-barebones
-Simple code to get V to run under a freestanding operating system kernel. Code snippets taken from vinix.
+Simple code to get V to run as a freestanding operating system kernel. Code snippets taken from vinix.
 
 ```sh
 # install V from source, and run ./v symlink.
