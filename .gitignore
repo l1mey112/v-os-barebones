@@ -1,0 +1,9 @@
+build
+
+*.elf
+*.iso
+*.hdd
+*.o
+*.d
+
+vls.log
