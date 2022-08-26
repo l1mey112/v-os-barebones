@@ -4,7 +4,15 @@ Simple code to get V to run under a freestanding operating system kernel. Code s
 Uses the limine bootloader, follow their steps to allow limine to compile alongside the kernel.
 
 ```sh
-make      # make V kernel
+# install V from source, and run ./v symlink.
+# install xorriso, check the makefile.
+
+cd limine/ && make # create the limine-deploy executable
+
+make # make V kernel
+
+# install qemu
+
 make qemu # run qemu
 ```
 
