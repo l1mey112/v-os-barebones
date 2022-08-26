@@ -36,7 +36,7 @@ fn getc(stream &FILE) int {
 
 [export: 'qsort']
 fn qsort(ptr voidptr, count u64, size u64, comp fn (a &C.void, b &C.void) int) {
-	kpanic(c"stub - atexit called")
+	kpanic(c"stub - qsort called")
 }
 
 [export: 'atexit']
